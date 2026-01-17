@@ -1,6 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Mail, Linkedin, Github, ExternalLink, Code, Briefcase, GraduationCap, Award, ChevronDown, Hand } from 'lucide-react';
-import profilePic from './assets/profile.png';
+const profilePic =
+  import.meta.env.VITE_PROFILE_IMG_URL ||
+  "https://placehold.co/300x300?text=Profile";
+
 
 export default function Portfolio() {
   const [activeSection, setActiveSection] = useState('home');
@@ -715,7 +718,7 @@ export default function Portfolio() {
                 <li>
                   <span className="font-semibold text-slate-100">City Harvest</span>
                   <span className="block mono text-sm text-slate-400">
-                     Outreach & Marketing
+                    Outreach & Marketing
                   </span>
                 </li>
 
