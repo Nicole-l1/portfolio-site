@@ -169,6 +169,18 @@ export default function Portfolio() {
       description: 'Web app for synchronized Netflix activity with real-time communication',
       highlights: ['Real-time sync between users', 'TMDb API integration'],
       github: 'https://github.com/Nicole-l1/NetTrack'
+    },
+    {
+      name: 'TrustLens',
+      tech: 'JavaScript, React, Node.js, Express, Local LLM (Ollama)',
+      description:
+        'AI-assisted web app for evaluating the authenticity of online reviews using transparent rule-based analysis and local language models',
+      highlights: [
+        'Classifies content as Genuine, Suspicious, or Likely Fake',
+        'Combines deterministic heuristics with local LLM explanations',
+        'Fully local execution with graceful fallback to rule-based logic'
+      ],
+      github: 'https://github.com/Nicole-l1/TrustLens'
     }
   ];
 
